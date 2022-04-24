@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <title>MLP Turnos</title>
+</head>
+<body>
+    <!--Logo de inico y boton home-->
+    <header>
+        <div class="headerBlock">
+            <a href="../index.html">
+                <div class="headerIcon">
+                    <img src="../media/img/iconos/home.png" alt="Home">
+                </div>
+                <div class="headerTitle"><h2>MLP Nutrición</h2></div>
+                <div class="headerSlogan"><p>"Creando hábitos para siempre"</p></div>
+            </a>
+        </div>
+    </header>
+    <!--Botonera entre paginas-->
+    <nav>
+        <ul>
+            <div class="navigationBlock">
+                <li>
+                    <a href="recipes.html">
+                        <img src="../media/img/iconos/recetas.png" alt="Recetas">
+                        <p>RECETAS</p> 
+                    </a>
+                </li>
+                <li>
+                    <a href="posts.html">
+                        <img src="../media/img/iconos/lupa.png" alt="Bajo la Lupa">
+                        <p>BAJO LA LUPA</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="appointment.html">
+                        <img src="../media/img/iconos/turnos.png" alt="Agenda tu Turno">
+                        <p>AGENDÁ TU TURNO</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <img src="../media/img/iconos/contacto.png" alt="Contacto y Redes">
+                        <p>CONTACTO Y REDES</p>
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </nav>
+    <!--Reserva de turnos-->
+    <main>
+    <div class="appointmentBlock">
+        <div class="appointmentTitle">
+            <h1>Reservá tu turno aquí</h1>
+        </div>
+        <form action="successful.html">
+        <div class="appointmentBody">
+            <div class="appointmentLeft">
+                <p>Ingresa tu Nombre y Apellido</p>
+                <input type="text" placeholder="Ingresa tu nombre">
+                <p>Ingresa tu número de teléfono</p>
+                <input type="text" placeholder="Ingresa tu número">
+                <p>Selecciona tu obra social o cobertura</p>
+                <select name="ObraSocial" id="">
+                    <option value="damsu">DAMSU</option>
+                    <option value="ossacra">OSSACRA</option>
+                    <option value="sancor">SANCOR</option>
+                    <option value="swiss">SWISS MEDICAL</option>
+                    <option value="aca">ACA SALUD</option>
+                    <option value="basa">BASA-ALL</option>
+                    <option value="apsot">APSOT</option>
+                    <option value="sp">San Pedro</option>
+                    <option value="federada">Federada</option>
+                    <option value="galeno">Galeno</option>
+                    <option value="jer">Jerárquicos</option>
+                    <option value="inter">Inter Medicina</option>
+                    <option value="opdea">OPDEA</option>
+                    <option value="asapm">ASAPM</option>
+                    <option value="osdepym">OSDEPYM</option>
+                    <option value="osdipp">OSDIPP</option>
+                    <option value="osetya">OSETYA</option>
+                    <option value="osseg">OSSEG</option>
+                    <option value="osfyhc">OSFYHC</option>
+                    <option value="iosfa">IOSFA</option>
+                    <option value="luis">Luis Pasteur</option>
+                    <option value="ospatca">OSPATCA</option>
+                    <option value="ospe">OSPE</option>
+                    <option value="ospis">OSPIS</option>
+                    <option value="poder">Poder Judicial</option>
+                    <option value="policia">Policía Federal</option>
+                    <option value="prev">Prevención Salud</option>
+                    <option value="red">Red de Seguros Médicos</option>
+                    <option value="serve">Servesalud</option>
+                    <option value="smsi">SMAI</option>
+                    <option value="smu">SMU</option>
+                    <option value="unimed">UNIMED</option>
+                    <option value="omint">OMINT</option>
+                    <option value="prov">PROVINCIA</option>
+                </select>
+            </div>
+            <div class="appointmentCenter">
+                <p>Selecciona los horarios que sean de tu preferencia (todos los que quieras)</p>
+                <!--value= lun/mar/mie/jue/vie + 1(manana)/2(siesta)/3(tarde)-->
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>LUNES</th>
+                            <th>MARTES</th>
+                            <th>MIÉRCOLES</th>
+                            <th>JUEVES</th>
+                            <th>VIERNES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>MAÑANA</th>
+                            <td><input type="checkbox" name="horarios" value="lun1"></td>
+                            <td><input type="checkbox" name="horarios" value="mar1"></td>
+                            <td><input type="checkbox" name="horarios" value="mie1"></td>
+                            <td><input type="checkbox" name="horarios" value="jue1"></td>
+                            <td><input type="checkbox" name="horarios" value="vie1"></td>
+                        </tr>
+                        <tr>
+                            <th>SIESTA</th>
+                            <td><input type="checkbox" name="horarios" value="lun2"></td>
+                            <td><input type="checkbox" name="horarios" value="mar2"></td>
+                            <td><input type="checkbox" name="horarios" value="mie2"></td>
+                            <td><input type="checkbox" name="horarios" value="jue2"></td>
+                            <td><input type="checkbox" name="horarios" value="vie2"></td>
+                        </tr>
+                        <tr>
+                            <th>TARDE</th>
+                            <td><input type="checkbox" name="horarios" value="lun3"></td>
+                            <td><input type="checkbox" name="horarios" value="mar3"></td>
+                            <td><input type="checkbox" name="horarios" value="mie3"></td>
+                            <td><input type="checkbox" name="horarios" value="jue3"></td>
+                            <td><input type="checkbox" name="horarios" value="vie3"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="appointmentRight">
+                <p>Ingresa algún mensaje o aclaración (de ser necesario)</p>
+                <textarea name="comentario" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="appointmentSend">
+                <input type="submit" value="Enviar formulario">
+            </div>
+        </div>
+        </form>
+    </div>
+    </main>
+    <footer>
+        <div class="mapBlock appointmentMap">
+            <h3>¿DÓNDE TRABAJO?</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d850.0974508799427!2d-68.52017921421988!3d-31.54091523683731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96816b47852460d5%3A0x8328c121d26af449!2sEITOM%20Cl%C3%ADnica!5e0!3m2!1ses!2sar!4v1648549100080!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+</body>
+</html>

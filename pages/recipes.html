@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <title>MLP Recetas</title>
+</head>
+<body>
+    <!--Logo de inico y boton home-->
+    <header>
+        <div class="headerBlock">
+            <a href="../index.html">
+                <div class="headerIcon">
+                    <img src="../media/img/iconos/home.png" alt="Home">
+                </div>
+                <div class="headerTitle"><h2>MLP Nutrición</h2></div>
+                <div class="headerSlogan"><p>"Creando hábitos para siempre"</p></div>
+            </a>
+        </div>
+    </header>
+    <!--Botonera entre paginas-->
+    <nav>
+        <ul>
+            <div class="navigationBlock">
+                <li>
+                    <a href="recipes.html">
+                        <img src="../media/img/iconos/recetas.png" alt="Recetas">
+                        <p>RECETAS</p> 
+                    </a>
+                </li>
+                <li>
+                    <a href="posts.html">
+                        <img src="../media/img/iconos/lupa.png" alt="Bajo la Lupa">
+                        <p>BAJO LA LUPA</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="appointment.html">
+                        <img src="../media/img/iconos/turnos.png" alt="Agenda tu Turno">
+                        <p>AGENDÁ TU TURNO</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <img src="../media/img/iconos/contacto.png" alt="Contacto y Redes">
+                        <p>CONTACTO Y REDES</p>
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </nav>
+    <main>
+        <!--anchor interno-->
+        <div class="titleBlock">
+            <h1>MIS RECETAS</h1>
+            <p>Aquí te enseño a hacer recetas nuevas. Algunas saludables y otras no tanto</p>
+        </div>
+        <!--anchor interno-->
+        <div id="list">
+            <h3>¿Qué receta quieres ver?</h3>
+            <div class="listOptions">
+                <a href="#recipe0"><p>Galletas de Jengibre</p></a>
+                <a href="#recipe1"><p>Pizza sin Horno</p></a>
+            </div>   
+        </div>
+        <!--Posteos-->
+        <div class="recipes">
+            <div id="recipe0" class="recipe">
+                <h3>Galletas de Jengibre - Receta</h3>
+                <video src="../media/videos/recetas/galletasJengibre.mp4" controls> Paso a paso para Galletas de Jengibre</video>
+                <div class="recipeText">
+                    <h4>Ingredientes</h4>
+                    <p>1 taza de harina de avena</p>
+                    <p>3 cucharadas de aceite</p>
+                    <p>2 cucharadas de miel</p>
+                    <p>Media cucharadita de canela y media de jengibre</p>
+                    <p>Leche cantidad necesaria</p>
+                </div>
+                <div class="listButton"><a href="#list"> Volver a la lista</a></div>
+            </div>
+            <div id="recipe1" class="recipe">
+                <h3>Pizza sin horno - Receta</h3>
+                <video src="../media/videos/recetas/pizza.mp4" controls>Paso a paso para pizza sin horno</video>
+                <div class="recipeText">
+                    <h4>Ingredientes</h4>
+                    <p>1 taza de harina integral</p>
+                    <p>1 cucharadita de levadura</p>
+                    <p>1 cucharada de aceite</p>
+                    <p>1/2 taza de agua aprox.</p>
+                    <p>Salsa, queso y todo lo que quieras agregarle.</p>
+                    <h4>Procedimiento</h4>
+                    <p> Mezclá la harina con la levadura el aceite y el agua. Formá la masa y dividí en 5 bollitos. Tapá y deja leudar hasta que dupliquen su tamaño.</p>
+                    <p>Estirá bien finitos cada bollo y cociná en una sartén a fuego mínimo de un lado. Cuando la des vuelta agregale la salsa y el quedó y tapá hasta que todo esté listo.</p>
+                </div>
+                <div class="listButton"><a href="#list"> Volver a la lista</a></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
