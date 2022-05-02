@@ -145,9 +145,10 @@ body{
 
 .navbar{
     position: relative;
-    top: 85px;
+    top: 82px;
     z-index: 0;
     left: 0px;
+    max-width: none;
 }
 .navbar-toggler{
     padding: 2px;
@@ -158,7 +159,8 @@ body{
     align-items: flex-start;
     background-color: #FFC300;
     width: 95vw;
-    min-width: 200px;+
+    min-width: 200px;
+    max-width: none;
 }
 .navbar-toggler img{
     height: 28px;
@@ -235,13 +237,14 @@ body{
 
 
 
-.presentationBlock{
+.container{
     animation: transitionInContent 1s;
-    min-width: 310px;
-    width: 98vw;
+    min-width: 280px;
+    width: 94vw;
+    max-width: none;
     position: relative;
-    top: 83px;
-    left: 2px;
+    top: 80px;
+    left: 10px;
     display: flex;
     flex-direction: column;
     background-color: #f7dcb9e6;
@@ -275,7 +278,7 @@ body{
 
 }
 @media screen and (min-width:768px){
-    .presentationBlock{
+    .container{
         top: 50px;
     }
     .presentationText{
@@ -288,22 +291,16 @@ body{
     }
 }
 @media screen and (min-width:1024px){
-    .presentationBlock{
+    .container{
         width: 98vw;
         position: relative;
         top: 32px;
-        display: grid;
-        grid-template-columns: 1.5fr 2fr;
-        grid-template-areas: 
-            "presentationTitle presentationTitle" 
-            "presentationImg presentationText";
         background-color: #f7dcb9e6;
         border-radius: 22px;
         margin-left: 5px;
         font-family: montserrat;
     }
     .presentationTitle{
-        grid-area: presentationTitle;
         width: 100%;
         text-align: center;
     }
@@ -314,7 +311,6 @@ body{
         color: #182833;
     }
     .presentationImg{
-        grid-area: presentationImg;
         height: 100%;
     }
     .presentationImg Img{
@@ -324,7 +320,6 @@ body{
         vertical-align: middle;
     }
     .presentationText{
-        grid-area: presentationText;
         margin: 20px;
         height: 100%;
         color: #182833;
@@ -334,7 +329,7 @@ body{
     }
 }
 @media screen and (min-width:992px){
-    .presentationBlock{
+    .container{
         top: 32px;
     }
 }
