@@ -397,8 +397,8 @@ body{
 .titleBlock{
     animation: transitionInTitles .9s;
     position: relative;
-    top: 65px;
-    left: -5px;
+    top: 80px;
+    left: 2px;
     display: flex;
     flex-direction: column;
     width: 98vw;
@@ -431,7 +431,7 @@ body{
 }
 @media screen and (min-width:768px){
     .titleBlock{
-        top: 35px;
+        top: 50px;
     }
     .titleBlock h1{
         font-size: 32px;
@@ -442,6 +442,11 @@ body{
         font-size: 16px;
     }
 }
+@media screen and (min-width:992px){
+    .titleBlock{
+        top: 32px;
+    }
+}
 
 
 
@@ -450,8 +455,8 @@ body{
 #list{
     animation: transitionInTitles 1s;
     position: relative;
-    top: 40px;
-    left: -10px;
+    top: 55px;
+    left: -2px;
     display: flex;
     flex-direction: column;
     width: 98vw;
@@ -503,13 +508,18 @@ body{
 }
 @media screen and (min-width:768px){
     #list{
-        top: 10px;
+        top: 26px;
     }
     #list h3{
         font-size: 28px;
     }
     #list p{
         font-size: 18px;    
+    }
+}
+@media screen and (min-width:992px){
+    #list{
+        top: 8px;
     }
 }
 
@@ -519,8 +529,8 @@ body{
 .recipe{
     animation: transitionInContent 1s;
     position: relative;
-    left: -5px;
-    top: 15px;
+    left: 2px;
+    top: 30px;
     width: 98vw;
     min-width: 310px;
     margin: 0px;
@@ -588,7 +598,7 @@ body{
 }
 @media screen and (min-width:768px){
     .recipe{
-        top: -15px;
+        top: 0px;
     }
     .recipe h3{
         font-size: 28px;
@@ -600,16 +610,27 @@ body{
         font-size: 18px;
     }
 }
+@media screen and (min-width:992px){
+    .recipe{
+        top: -14px;
+    }
+}
 
 
 
-
+.container-post{
+    background-color: #1f476200;
+    position: relative;
+    top: 18px;
+    left: 0px;
+}
 .post{
     animation: transitionInContent 1s;
-    position: relative;
-    left: -5px;
-    top: 15px;
+    display: flex;
     flex-direction: column;
+    position: relative;
+    left: 0px;
+    top: 10px;
     align-items: center;
     width: calc(98vw - 20px);
     min-width: 290px;
@@ -621,6 +642,7 @@ body{
     margin-left: 0px;
     font-family: montserrat;
     align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
 }
 .postTitle{
@@ -634,8 +656,8 @@ body{
     font-size: 20px;
 }
 .postBody{
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
 }
 .postBody img{
     width: 100%;
@@ -659,6 +681,16 @@ body{
 @media screen and (min-width:1024px){
     .postBody img{
         width: 50%;
+    }
+}
+@media screen and (min-width:992px){
+    .container-post{
+        top: 0px;
+    }
+}
+@media screen and (min-width:1200px){
+    .post{
+        width: calc(98vw/2 - 20px);
     }
 }
 
