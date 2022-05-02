@@ -868,18 +868,15 @@ body{
 .socialBlock{
     animation: transitionInContent 1s;
     position: relative;
-    left: -10px;
-    top: 35px;
-    display: flex;
-    flex-direction: column;
+    left: 0px;
+    top: 50px;
     width: 98%;
     font-family: montserrat;
+    background-color: #18283300;
 }
 .socialBlock a{
     display: flex;
-    flex-flow: row;
     align-items: center;
-    width: calc(100% - 10px);
     min-width: 290px;
     margin: 5px;
     padding: 5px;
@@ -905,12 +902,6 @@ body{
     .socialBlock{
         left: -10px;
         top: 10px;
-        display: flex;
-        flex-direction: row;
-    }
-    .socialBlock a{
-        width: calc(33% - 10px);
-        justify-content: space-between;
     }
 }
 
@@ -919,8 +910,8 @@ body{
 .emailForm{
     animation: transitionInContent2 1s;
     position: relative;
-    top: 35px;
-    left: -5px;
+    top: 50px;
+    left: 15px;
     display: grid;
     width: calc(98vw - 20px);
     min-width: 290px;
