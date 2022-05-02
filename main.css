@@ -521,13 +521,6 @@ body{
     position: relative;
     left: -5px;
     top: 15px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: 
-        "recipeTitle recipeTitle" 
-        "recipeMedia recipeMedia"
-        "recipeText recipeText"
-        "recipeButton recipeButton";
     width: 98vw;
     min-width: 310px;
     margin: 0px;
@@ -540,7 +533,6 @@ body{
     margin-bottom: 30px;
 }
 .recipe h3{
-    grid-area: recipeTitle;
     width: calc(100% - 10px);
     text-align: center;
     font-weight: 700;
@@ -548,14 +540,12 @@ body{
     margin: 10px;
 }
 .recipe video{
-    grid-area: recipeMedia;
     width: calc(100% - 10px);
     margin: 5px;
     margin-bottom: 0px;
     border-radius: 10px;
 }
 .recipeText{
-    grid-area: recipeText;
     margin: 25px;
 }
 .recipeText h4{
@@ -571,7 +561,6 @@ body{
 }
 .listButton {
     display: flex;
-    grid-area: recipeButton;
     margin: 10px;
     width: 100%;
     height: fit-content;
@@ -609,15 +598,6 @@ body{
     }
     .recipeText p{
         font-size: 18px;
-    }
-}
-@media screen and (min-width:1024px){
-    .recipe{
-        grid-template-columns: 1.5fr 2fr;
-        grid-template-areas: 
-            "recipeTitle recipeTitle" 
-            "recipeMedia recipeText"
-            "recipeButton recipeButton";
     }
 }
 
