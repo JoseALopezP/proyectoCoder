@@ -701,7 +701,7 @@ body{
     animation: transitionInContent 1s;
     position: relative;
     top: 50px;
-    left: -10px;
+    left: 10px;
     display: flex;
     flex-direction: column;
     width: calc(98vw - 30px);
@@ -777,6 +777,9 @@ body{
 .appointmentRight p{
     font-weight: 600;
     font-size: 14px;
+}
+.appointmentRight textarea{
+    width: 100%;
 }
 .appointmentSend{
     grid-area:appointmentSend;
