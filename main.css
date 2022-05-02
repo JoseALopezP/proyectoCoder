@@ -41,7 +41,9 @@ body{
     width: fit-content;
 }
 .headerIcon img{
-    width: 80px;
+    height: 80px;
+    position: relative;
+    top: -2px;
 }
 .headerTitle{
     grid-area: headerTitle;
@@ -85,7 +87,9 @@ body{
         "headerIcon headerTitle headerSlogan";
     }
     .headerIcon img{
-        width: 50px;
+        height: 50px;
+        position: relative;
+        top: -2px;
     }
     .headerTitle h2{
         text-align: left;
@@ -114,7 +118,9 @@ body{
         width: 50px;
     }
     .headerIcon img{
-        width: 100%;
+        height: 50px;
+        position: relative;
+        top: -2px;
     }
     .headerTitle{
         width: fit-content;
@@ -137,82 +143,94 @@ body{
 
 
 
-
-
-
-.navigationBlock{
-    animation: transitionInTitles 0.8s;
+.navbar{
     position: relative;
-    min-width: 317px;
-    top: 75px;
-    left: -55px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 99vw;
+    top: 85px;
+    z-index: 0;
+    left: 0px;
 }
-.navigationBlock li{
-    list-style-type: none;
-    width: calc(49% - 15px);
-    margin-left: 15px;
-    margin-top: 5px;
-}
-.navigationBlock a{
-    transition: all 0.3s ease 0s;
-    display: inline-flex;
-    width: 100%;
-    height: 40px;
-    align-items: center;
-    
-
+.navbar-toggler{
     padding: 2px;
-    border-radius: 22px;
+    border-radius: 17px;
+    height: 30px;
+    border: 0;
+    display: flex;
+    align-items: flex-start;
     background-color: #FFC300;
+    width: 95vw;
+    min-width: 200px;+
+}
+.navbar-toggler img{
+    height: 28px;
+    position: relative;
+    left: 0px;
+}
+.navbar-nav .nav-item a{
+    position: relative;
+    height: 25px;
+    margin: 1px;
+    left: 0px;
+    top: 5px;
+    min-width: 200px;
+    border: solid beige 1px;
+    background-color: #FFC300;
+    padding: 2px;
+    border-radius: 14.5px;
     color: beige;
-    font-family: montserrat;
     text-decoration: none;
-
-}
-.navigationBlock a:hover{
-    opacity: .8;
-} 
-.navigationBlock a img{
-    height: 40px;
-}
-.navigationBlock p{
-    margin: 0px;
-    width: 90%;
+    font-family: montserrat;
     text-align: center;
     font-size: 12px;
     font-weight: 600;
+    justify-items: left;
+}
+.navbar-nav .nav-item a img{
+    height: 100%;
 }
 @media screen and (min-width:375px){
-    .navigationBlock p{
-        font-size: 14px;
+    .navbar{
+        left: 0px;
+        top: 82px;
+    }
+    .navbar-nav .nav-item a{
+        left: 2px;
+        top: 3px;
     }
 }
 @media screen and (min-width:768px){
-    .navigationBlock{
-        top: 45px;
+    .navbar{
+        left: 0px;
+        top: 52px;
     }
-    .navigationBlock li{
-        list-style-type: none;
+    .navbar-nav .nav-item a{
+        width: 98%;
+        left: 2px;
+        top: 3px;
+    }
+}
+@media screen and (min-width:992px){
+    .navbar-nav{
+        width: 100%;
+    }
+    .nav-item{
+        position: relative;
+        top: -10px;
+        height: 40px;
         width: calc(24.5% - 15px);
         margin-left: 15px;
         margin-top: 5px;
     }
-    .navigationBlock p{
-        font-size: 14px;
+    .navbar-nav .nav-item a{
+        min-width: none;
+    }
+    .navbar-toggler{
+        height: 30px;
+    }
+    .navbar-nav .nav-item a{
+        height: 30px;
+        font-size: 16px;
     }
 }
-@media screen and (min-width:1024px){
-    .navigationBlock p{
-        font-size: 18px;
-    }
-
-    
-}
-
-
 
 
 
@@ -222,14 +240,15 @@ body{
     min-width: 310px;
     width: 98vw;
     position: relative;
-    top: 65px;
-    left: -5px;
+    top: 83px;
+    left: 2px;
     display: flex;
     flex-direction: column;
     background-color: #f7dcb9e6;
     border-radius: 22px;
     margin-left: 0px;
     font-family: montserrat;
+    z-index: -1;
 }
 .presentationTitle{
     width: 100%;
@@ -255,12 +274,9 @@ body{
     font-weight: 400;
 
 }
-@media screen and (min-width:375px){
-
-}
 @media screen and (min-width:768px){
     .presentationBlock{
-        top: 35px;
+        top: 50px;
     }
     .presentationText{
         font-size: 14px;
@@ -317,6 +333,11 @@ body{
     
     }
 }
+@media screen and (min-width:992px){
+    .presentationBlock{
+        top: 32px;
+    }
+}
 
 
 
@@ -324,8 +345,8 @@ body{
     animation: transitionInContent2 1s;
     min-width: 310px;
     position: relative;
-    top: 70px;
-    left: -10px;
+    top: 88px;
+    left: -2px;
     display: flex;
     width: 98vw;
     margin: 0px;
@@ -358,7 +379,12 @@ body{
 }
 @media screen and (min-width:768px){
     .mapBlock{
-        top: 40px;
+        top: 55px;
+    }
+}
+@media screen and (min-width:992px){
+    .mapBlock{
+        top: 36px;
     }
 }
 @media screen and (min-width:1024px){
