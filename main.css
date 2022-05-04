@@ -384,7 +384,7 @@ body{
 }
 @media screen and (min-width:1024px){
     .mapBlock{
-        left: -5px;
+        left: 10px;
     }
     .mapBlock h3{
         font-size: 30PX;
