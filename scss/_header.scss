@@ -1,0 +1,136 @@
+.headerBlock{
+    animation: transitionInTitles 0.6s;
+    transition: all 0.3s ease 0s;
+    position: fixed;
+    margin: 5px;
+    top: 0px;
+    left: -5px;
+    height: 80px;
+    width: 98vw;
+    min-width: 310px;
+    padding: 2px;
+    border-radius: 42px;
+    background-color: $base-color;
+    z-index: 1;
+    a{
+        display: grid;
+        grid-template-areas: 
+            "headerIcon headerTitle"
+            "headerIcon headerSlogan";
+        height: 100%;
+        width: 100%;
+        color: $font-color-1;
+        font-family: $base-font;
+        text-decoration: none;
+    }
+    &:hover{
+        opacity: .8;
+    }
+}
+
+.headerIcon{
+    grid-area: headerIcon;
+    width: fit-content;
+    img{
+        height: 80px;
+        position: relative;
+        top: -2px;
+    }
+}
+.headerTitle{
+    grid-area: headerTitle;
+    display: flex;
+    align-content: flex-start;
+    h2{
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-weight: 700;
+        font-size: 28px;
+    }
+}
+.headerSlogan{
+    grid-area: headerSlogan;
+    p{
+        text-align: left;
+        font-weight: 500;
+        font-size: 12px;
+    }
+} 
+@media screen and (min-width:375px){
+    .headerTitle h2{
+        text-align: left;
+        margin-top: 5px;
+        font-size: 32px;
+    }
+    .headerSlogan p{
+        margin-top: 10px;
+        text-align: left;
+        font-size: 16px;
+    }
+}
+@media screen and (min-width:768px){
+    .headerBlock{
+        height: 50px;
+        a{
+            grid-template-columns: min-content;
+            grid-template-areas: 
+            "headerIcon headerTitle headerSlogan";
+        }
+    }
+    .headerIcon img{
+        height: 50px;
+        position: relative;
+        top: -2px;
+    }
+    .headerTitle h2{
+        text-align: left;
+        margin-left: 10px;
+        margin-top: 0px;
+        font-size: 38px;
+    }
+    .headerSlogan p{
+        margin-top: 10px;
+        text-align: left;
+        font-size: 24px;
+    }
+}
+@media screen and (min-width:1024px){
+    .headerBlock{
+        position: fixed;
+        top: 0px;
+        height: 50px;
+        width: 98vw;
+        margin-left: 10px;
+    
+        padding: 2px;
+        border-radius: 27px;
+    }
+    .headerIcon{
+        width: 50px;
+        img{
+            height: 50px;
+            position: relative;
+            top: -2px;
+        }
+    }
+    .headerTitle{
+        width: fit-content;
+        h2{
+        
+            margin-right: 0px;
+            font-weight: 700;
+            font-size: 38px;
+        }
+    }
+    .headerSlogan{ 
+        p{
+            margin: 10px;
+            width: 100%;
+            text-align: left;
+            font-weight: 500;
+            font-size: 24px;
+        }
+    }
+    
+}

@@ -1,0 +1,165 @@
+.appointmentBlock{
+    animation: $content-transition-1;
+    position: relative;
+    top: 50px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    width: calc(98vw - 30px);
+    min-width: 290px;
+    padding: 15px;
+    margin: 0px;
+    background-color: $second-color;
+    color: $font-color-2;
+    border-radius: 22px;
+    margin-left: 5px;
+    font-family: $base-font;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+.appointmentTitle{
+    width: 100%;
+    h1{
+        text-align: center;
+        font-size: 20px;
+        margin: 0px;
+    }
+}
+.appointmentBody{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+        "appointmentLeft appointmentLeft appointmentLeft"
+        "appointmentCenter appointmentCenter appointmentCenter"
+        "appointmentRight appointmentRight appointmentRight"
+        "appointmentSend appointmentSend appointmentSend";
+    justify-content: space-between;
+}
+.appointmentLeft{
+    margin: 5px;
+    grid-area:appointmentLeft;
+    align-content: center;
+    p{
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+.appointmentCenter{
+    margin: 0px;
+    width: 100%;
+    grid-area:appointmentCenter;
+    p{
+        font-weight: 600;
+        font-size: 12px;
+    }
+    table{
+        width: 100%;
+        border: solid;
+        border-color: $third-color;
+        align-content: center;
+        font-size: 8px;
+        th,td{
+            border: solid;
+            border-color: $third-color;
+            align-content: center;
+        }
+        input{
+            width: 100%;
+        }
+    }
+}
+.appointmentRight{
+    margin: 5px;
+    grid-area: appointmentRight;
+    p{
+        font-weight: 600;
+        font-size: 14px;
+    }
+    textarea{
+        width: 100%;
+    }
+}
+.appointmentSend{
+    grid-area:appointmentSend;
+}
+@media screen and (min-width:425px){
+    .appointmentCenter p{
+        font-size: 14px;
+    }
+    .appointmentRight p{
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .appointmentCenter table{
+        font-size: 11px;
+    }
+}
+@media screen and (min-width:768px){
+    .appointmentBlock{
+        top: 20px;
+    }
+    .appointmentBody{
+        grid-template-areas: 
+            "appointmentLeft appointmentCenter appointmentCenter"
+            "appointmentLeft appointmentCenter appointmentCenter"
+            "appointmentRight appointmentRight appointmentSend";
+        justify-content: space-between;
+    }
+    .appointmentCenter{
+        margin-top: 40px;
+        width: 99%;
+        p{
+            font-size: 18px;
+        }
+        table{
+            font-size: 12px;
+        }
+    }
+    .appointmentRight{
+        display: flex;
+        flex-direction: column;
+        p{
+            font-weight: 600;
+            font-size: 20px;
+        }
+    }
+    .appointmentSend{
+        margin: 10px;
+        width: 80%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: center;
+    }
+    .appointmentMap{
+        top: 0px;
+    }
+    .appointmentTitle h1{
+        font-size: 34px;
+    }
+}
+@media screen and (min-width:1024px){
+    .appointmentBody{
+        grid-template-areas: 
+            "appointmentLeft appointmentCenter appointmentRight"
+            "appointmentLeft appointmentCenter appointmentRight"
+            "appointmentSend appointmentSend appointmentSend";
+        justify-content: space-between;
+    }
+    .appointmentCenter{ 
+        p{
+            font-size: 20px;
+        }
+        table{
+            font-size: 14px;
+        }
+    }
+    .appointmentRight p{
+        font-weight: 600;
+        font-size: 22px;
+    }
+    .appointmentTitle h1{
+        font-size: 38px;
+    }
+}

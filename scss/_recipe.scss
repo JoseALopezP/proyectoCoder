@@ -1,0 +1,91 @@
+.recipe{
+    animation: $content-transition-1;
+    position: relative;
+    left: 2px;
+    top: 30px;
+    width: 98vw;
+    min-width: 310px;
+    margin: 0px;
+    background-color: $second-color;
+    color: $font-color-2;
+    border-radius: 22px;
+    margin-left: 0px;
+    font-family: $base-font;
+    align-items: center;
+    margin-bottom: 30px;
+    h3{
+        width: calc(100% - 10px);
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        margin: 10px;
+    }
+    video{
+        width: calc(100% - 10px);
+        margin: 5px;
+        margin-bottom: 0px;
+        border-radius: 10px;
+    }
+}
+.recipeText{
+    margin: 25px;
+    h4{
+        text-align: center;
+        font-weight: 600;
+        font-size: 18px;
+        margin: 5px;
+    }
+    p{
+        font-weight: 400;
+        font-size: 14px;
+        margin: 0px;
+    }
+}
+.listButton{
+    display: flex;
+    margin: 10px;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    a{
+        background-color: $third-color;
+        padding: 10px;
+        margin: 0px;
+        height: fit-content;
+        border-radius: 10px;
+        color: $font-color-1;
+        text-decoration: none;
+    }
+}
+@media screen and (min-width:425px){
+    .recipe h3{
+        font-size: 24px;
+    }
+    .recipeText{
+        h4{
+            font-size: 22px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+}
+@media screen and (min-width:768px){
+    .recipe{
+        top: 0px;
+        h3{
+            font-size: 28px;
+        }
+        h4{
+            font-size: 24px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+}
+@media screen and (min-width:992px){
+    .recipe{
+        top: -14px;
+    }
+}

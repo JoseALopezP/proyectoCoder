@@ -1,0 +1,51 @@
+.mapBlock{
+    animation: $content-transition-2;
+    min-width: 310px;
+    position: relative;
+    top: 88px;
+    left: -2px;
+    display: flex;
+    width: 98vw;
+    margin: 0px;
+    flex-direction: column;
+    background-color: $second-color;
+    border-radius: 22px;
+    margin-left: 5px;
+    font-family: $base-font;
+    align-items: center;
+    margin-bottom: 30px;
+    h3{
+        font-weight: 700;
+        font-size: 20PX;
+        margin: 5px;
+        color: $font-color-2;
+    }
+    iframe{
+        width: calc(100% - 22px);
+        margin-bottom: 12px;
+        border-radius: 22px;
+        border:#182833 solid 3px;
+    
+    }
+}
+.appointmentMap{
+    top: 35px;
+}
+@media screen and (min-width:768px){
+    .mapBlock{
+        top: 55px;
+    }
+}
+@media screen and (min-width:992px){
+    .mapBlock{
+        top: 36px;
+    }
+}
+@media screen and (min-width:1024px){
+    .mapBlock{
+        left: 10px;
+        h3{
+            font-size: 30PX;
+        }
+    }
+}

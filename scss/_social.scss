@@ -1,0 +1,39 @@
+.socialBlock{
+    animation: $content-transition-1;
+    position: relative;
+    left: 0px;
+    top: 50px;
+    width: 98%;
+    font-family: $base-font;
+    background-color: #18283300;
+    a{
+        display: flex;
+        align-items: center;
+        min-width: 290px;
+        margin: 5px;
+        padding: 5px;
+        border-top-left-radius: 55px;
+        border-bottom-left-radius: 55px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        background-color: $third-color;
+        text-decoration: none;
+        color: $font-color-1;
+        font-size: 32px;
+        img{
+            height: 50px;
+        }
+    }
+    h4{
+        width: 100%;
+        margin: 5px;
+        font-size: 24px;
+        text-align: center;
+    }
+}
+@media screen and (min-width:768px){
+    .socialBlock{
+        left: -10px;
+        top: 10px;
+    }
+}

@@ -1,0 +1,55 @@
+.titleBlock{
+    animation: transitionInTitles .9s;
+    position: relative;
+    top: 80px;
+    left: 2px;
+    display: flex;
+    flex-direction: column;
+    width: 98vw;
+    min-width: 310px;
+    background-color: $second-color;
+    border-radius: 22px;
+    margin-left: 0px;
+    font-family: $base-font;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    h1{
+        margin: 2px;
+        color: $font-color-2;
+        font-weight: 800;
+        font-size: 24px;
+    }
+    P{
+        margin: 5px;
+        color: $font-color-2;
+        font-weight: 500;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+@media screen and (min-width:425px){
+    .titleBlock{ 
+        h1{
+            font-size: 28px;
+        }
+    }
+}
+@media screen and (min-width:768px){
+    .titleBlock{
+        top: 50px;
+        h1{
+            font-size: 32px;
+        }
+        P{
+            margin: 0px;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+    }
+}
+@media screen and (min-width:992px){
+    .titleBlock{
+        top: 32px;
+    }
+}

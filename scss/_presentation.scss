@@ -1,0 +1,97 @@
+.container{
+    animation: $content-transition-1;
+    min-width: 280px;
+    width: 94vw;
+    max-width: none;
+    position: relative;
+    top: 80px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: $second-color;
+    border-radius: 22px;
+    margin-left: 0px;
+    font-family: $base-font;
+    z-index: -1;
+    .presentationTitle{
+        width: 100%;
+        text-align: center;
+        h1{
+            font-weight: 800;
+            font-size: 26px;
+            margin: 5px;
+            color: $font-color-2;
+        }
+    }
+    .presentationImg{ 
+        Img{
+            width: calc(100% - 10px);
+            border-radius: 22px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+    .presentationText{
+        margin-left: 5px;
+        height: 100%;
+        color: $font-color-2;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+@media screen and (min-width:768px){
+    .container{
+        top: 50px;
+        .presentationText{
+            font-size: 14px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .presentationTitle{
+            h1{
+                font-size: 32px;
+            }
+        }
+    }
+}
+@media screen and (min-width:1024px){
+    .container{
+        width: 98vw;
+        position: relative;
+        top: 32px;
+        background-color: $second-color;
+        border-radius: 22px;
+        margin-left: 5px;
+        font-family: montserrat;
+        .presentationTitle{
+            width: 100%;
+            text-align: center;
+            h1{
+                font-weight: 800;
+                font-size: 48px;
+                margin: 5px;
+            }
+        }
+        .presentationImg{
+            height: 100%;
+            Img{
+                width: 100%;
+                border-radius: 22px;
+                margin: 10px;
+                vertical-align: middle;
+            }
+        }
+        .presentationText{
+            margin: 20px;
+            height: 100%;
+            font-size: 18px;
+            font-weight: 400;
+        
+        }
+    }  
+}
+@media screen and (min-width:992px){
+    .container{
+        top: 32px;
+    }
+}
