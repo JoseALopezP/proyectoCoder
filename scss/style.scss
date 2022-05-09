@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body{
-    animation: scroll 70s linear infinite;
+    animation: scrollBackground 70s linear infinite;
     width: 99%;
     background-image: url(media/img/background/lemons.jpg);
     background-repeat: repeat;
@@ -21,21 +22,22 @@ body{
     border-radius: 42px;
     background-color: #FFC300;
     z-index: 1;
+    a{
+        display: grid;
+        grid-template-areas: 
+            "headerIcon headerTitle"
+            "headerIcon headerSlogan";
+        height: 100%;
+        width: 100%;
+        color: beige;
+        font-family: montserrat;
+        text-decoration: none;
+    }
+    &:hover{
+        opacity: .8;
+    }
 }
-.headerBlock:hover{
-    opacity: .8;
-}
-.headerBlock a{
-    display: grid;
-    grid-template-areas: 
-        "headerIcon headerTitle"
-        "headerIcon headerSlogan";
-    height: 100%;
-    width: 100%;
-    color: beige;
-    font-family: montserrat;
-    text-decoration: none;
-}
+
 .headerIcon{
     grid-area: headerIcon;
     width: fit-content;
@@ -1020,7 +1022,7 @@ body{
         transform: translate(0px, 0px)
     }
 }
-@keyframes scroll{
+@keyframes scrollBackground{
     100%{
         background-position:0px -3000px;
     }
