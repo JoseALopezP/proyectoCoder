@@ -1,0 +1,38 @@
+@mixin base($margin, $width, $font-family, $position, $z-index, $min-width, $animation){
+    margin: $margin;
+    width: $width;
+    font-family: $font-family;
+    position: $position;
+    z-index: $z-index;
+    min-width: $min-width;
+    animation: $animation;
+}
+
+//codigo de mapeo: 1-estilado content transition1 2-Estilado content transition2
+$clases:(
+    appointmentBlock: 1;
+    mapBlock: 2;
+    post: 1;
+    recipe: 1;
+    socialBlock: 1;
+
+);
+
+.container{
+    @include base(5px,calc(98vw-20px),$base-font,relative,-1,300px,$content-transition-1)
+}
+.emailForm{
+    @include base(5px,calc(98vw-20px),$base-font,relative,-1,300px,$content-transition-2)
+}
+
+@each $clases, $value in $clases{
+    @if $value == 1{
+        .#{clases}{
+            @extend .container;
+        }
+    }@else if $value == 2{
+        .#{clases}{
+            @extend .emailForm;
+        }
+    }
+};
