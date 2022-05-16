@@ -1,17 +1,11 @@
 .mapBlock{
-    animation: $content-transition-2;
-    min-width: 310px;
-    position: relative;
     top: 88px;
     left: -2px;
     display: flex;
-    width: 98vw;
-    margin: 0px;
     flex-direction: column;
     background-color: $second-color;
     border-radius: 22px;
     margin-left: 5px;
-    font-family: $base-font;
     align-items: center;
     margin-bottom: 30px;
     h3{

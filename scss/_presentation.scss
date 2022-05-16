@@ -1,18 +1,11 @@
 .container{
-    animation: $content-transition-1;
-    min-width: 280px;
-    width: 94vw;
     max-width: none;
-    position: relative;
     top: 80px;
     left: 10px;
     display: flex;
     flex-direction: column;
     background-color: $second-color;
     border-radius: 22px;
-    margin-left: 0px;
-    font-family: $base-font;
-    z-index: -1;
     .presentationTitle{
         width: 100%;
         text-align: center;

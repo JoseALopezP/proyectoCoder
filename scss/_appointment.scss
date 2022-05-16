@@ -1,19 +1,13 @@
 .appointmentBlock{
     animation: $content-transition-1;
-    position: relative;
     top: 50px;
     left: 10px;
     display: flex;
     flex-direction: column;
-    width: calc(98vw - 30px);
-    min-width: 290px;
     padding: 15px;
-    margin: 0px;
     background-color: $second-color;
     color: $font-color-2;
     border-radius: 22px;
-    margin-left: 5px;
-    font-family: $base-font;
     margin-bottom: 30px;
     margin-top: 30px;
     text-align: center;

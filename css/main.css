@@ -196,35 +196,46 @@ body {
       font-size: 16px;
       min-width: none; } }
 
-.container {
-  animation: transitionInContent 1s;
-  min-width: 280px;
-  width: 94vw;
-  max-width: none;
+.container, .appointmentBlock, .post, .recipe, .socialBlock {
+  margin: 5px;
+  width: calc(98vw-20px);
+  font-family: montserrat;
   position: relative;
+  z-index: -1;
+  min-width: 300px;
+  animation: transitionInContent 1s; }
+
+.mapBlock {
+  margin: 5px;
+  width: calc(98vw-20px);
+  font-family: montserrat;
+  position: relative;
+  z-index: -1;
+  min-width: 300px;
+  animation: transitionInContent2 1s; }
+
+.container, .appointmentBlock, .post, .recipe, .socialBlock {
+  max-width: none;
   top: 80px;
   left: 10px;
   display: flex;
   flex-direction: column;
   background-color: #f7dcb9e6;
-  border-radius: 22px;
-  margin-left: 0px;
-  font-family: montserrat;
-  z-index: -1; }
-  .container .presentationTitle {
+  border-radius: 22px; }
+  .container .presentationTitle, .appointmentBlock .presentationTitle, .post .presentationTitle, .recipe .presentationTitle, .socialBlock .presentationTitle {
     width: 100%;
     text-align: center; }
-    .container .presentationTitle h1 {
+    .container .presentationTitle h1, .appointmentBlock .presentationTitle h1, .post .presentationTitle h1, .recipe .presentationTitle h1, .socialBlock .presentationTitle h1 {
       font-weight: 800;
       font-size: 26px;
       margin: 5px;
       color: #182833; }
-  .container .presentationImg Img {
+  .container .presentationImg Img, .appointmentBlock .presentationImg Img, .post .presentationImg Img, .recipe .presentationImg Img, .socialBlock .presentationImg Img {
     width: calc(100% - 10px);
     border-radius: 22px;
     margin-left: 5px;
     margin-right: 5px; }
-  .container .presentationText {
+  .container .presentationText, .appointmentBlock .presentationText, .post .presentationText, .recipe .presentationText, .socialBlock .presentationText {
     margin-left: 5px;
     height: 100%;
     color: #182833;
@@ -232,17 +243,17 @@ body {
     font-weight: 400; }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .container, .appointmentBlock, .post, .recipe, .socialBlock {
     top: 50px; }
-    .container .presentationText {
+    .container .presentationText, .appointmentBlock .presentationText, .post .presentationText, .recipe .presentationText, .socialBlock .presentationText {
       font-size: 14px;
       margin-left: 10px;
       margin-right: 10px; }
-    .container .presentationTitle h1 {
+    .container .presentationTitle h1, .appointmentBlock .presentationTitle h1, .post .presentationTitle h1, .recipe .presentationTitle h1, .socialBlock .presentationTitle h1 {
       font-size: 32px; } }
 
 @media screen and (min-width: 1024px) {
-  .container {
+  .container, .appointmentBlock, .post, .recipe, .socialBlock {
     width: 98vw;
     position: relative;
     top: 32px;
@@ -250,44 +261,38 @@ body {
     border-radius: 22px;
     margin-left: 5px;
     font-family: montserrat; }
-    .container .presentationTitle {
+    .container .presentationTitle, .appointmentBlock .presentationTitle, .post .presentationTitle, .recipe .presentationTitle, .socialBlock .presentationTitle {
       width: 100%;
       text-align: center; }
-      .container .presentationTitle h1 {
+      .container .presentationTitle h1, .appointmentBlock .presentationTitle h1, .post .presentationTitle h1, .recipe .presentationTitle h1, .socialBlock .presentationTitle h1 {
         font-weight: 800;
         font-size: 48px;
         margin: 5px; }
-    .container .presentationImg {
+    .container .presentationImg, .appointmentBlock .presentationImg, .post .presentationImg, .recipe .presentationImg, .socialBlock .presentationImg {
       height: 100%; }
-      .container .presentationImg Img {
+      .container .presentationImg Img, .appointmentBlock .presentationImg Img, .post .presentationImg Img, .recipe .presentationImg Img, .socialBlock .presentationImg Img {
         width: 100%;
         border-radius: 22px;
         margin: 10px;
         vertical-align: middle; }
-    .container .presentationText {
+    .container .presentationText, .appointmentBlock .presentationText, .post .presentationText, .recipe .presentationText, .socialBlock .presentationText {
       margin: 20px;
       height: 100%;
       font-size: 18px;
       font-weight: 400; } }
 
 @media screen and (min-width: 992px) {
-  .container {
+  .container, .appointmentBlock, .post, .recipe, .socialBlock {
     top: 32px; } }
 
 .mapBlock {
-  animation: transitionInContent2 1s;
-  min-width: 310px;
-  position: relative;
   top: 88px;
   left: -2px;
   display: flex;
-  width: 98vw;
-  margin: 0px;
   flex-direction: column;
   background-color: #f7dcb9e6;
   border-radius: 22px;
   margin-left: 5px;
-  font-family: montserrat;
   align-items: center;
   margin-bottom: 30px; }
   .mapBlock h3 {
@@ -424,18 +429,12 @@ body {
     top: 8px; } }
 
 .recipe {
-  animation: transitionInContent 1s;
-  position: relative;
   left: 2px;
   top: 30px;
-  width: 98vw;
-  min-width: 310px;
-  margin: 0px;
   background-color: #f7dcb9e6;
   color: #182833;
   border-radius: 22px;
   margin-left: 0px;
-  font-family: montserrat;
   align-items: center;
   margin-bottom: 30px; }
   .recipe h3 {
@@ -506,22 +505,16 @@ body {
   left: 0px; }
 
 .post {
-  animation: transitionInContent 1s;
   display: flex;
   flex-direction: column;
-  position: relative;
   left: 0px;
   top: 10px;
   align-items: center;
-  width: calc(98vw - 20px);
-  min-width: 290px;
   padding: 10px;
-  margin: 0px;
   background-color: #f7dcb9e6;
   color: #182833;
   border-radius: 22px;
   margin-left: 0px;
-  font-family: montserrat;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px; }
@@ -568,20 +561,14 @@ body {
 
 .appointmentBlock {
   animation: transitionInContent 1s;
-  position: relative;
   top: 50px;
   left: 10px;
   display: flex;
   flex-direction: column;
-  width: calc(98vw - 30px);
-  min-width: 290px;
   padding: 15px;
-  margin: 0px;
   background-color: #f7dcb9e6;
   color: #182833;
   border-radius: 22px;
-  margin-left: 5px;
-  font-family: montserrat;
   margin-bottom: 30px;
   margin-top: 30px;
   text-align: center; }
@@ -694,12 +681,8 @@ body {
     font-size: 38px; } }
 
 .socialBlock {
-  animation: transitionInContent 1s;
-  position: relative;
   left: 0px;
   top: 50px;
-  width: 98%;
-  font-family: montserrat;
   background-color: #18283300; }
   .socialBlock a {
     display: flex;
