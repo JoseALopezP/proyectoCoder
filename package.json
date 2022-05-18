@@ -1,7 +1,7 @@
 {
   "name": "proyectocoder",
   "version": "1.0.0",
-  "description": "",
+  "description": "1) Agregado archivo ReadMe\r 2) Busco automatizar los valores repetitivos dentro de las clases del css. Para esto:\r  a)Genero un nuevo archivo donde trabajar \"_mixinBase\"\r  a)Agrego un mixin con la lista de propiedades mas comunes de los bloques.\r  b)Agrego un mapa para agregar el nombre de las clases a editar (clases que comparten esas caracteristicas).\r  c)Agrego mixin a 2 clases base (.container y .mapBlock) donde voy a agregar las otras clases con @extend\r  c)Realizo un @Each que recorra el mapa de clases realizando los extend diferenciando con un condicional para identificar a qué clase adherirlo.\r 3)Agregué SEO (keywords, description, favicon y title) a todas las páginas",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,5 +17,9 @@
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseALopezP/proyectoCoder.git"
   }
 }
