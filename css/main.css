@@ -21,7 +21,7 @@ body {
   padding: 2px;
   border-radius: 42px;
   background-color: #FFC300;
-  z-index: 1; }
+  z-index: 99; }
   .headerBlock a {
     display: grid;
     grid-template-areas: "headerIcon headerTitle" "headerIcon headerSlogan";
@@ -196,25 +196,23 @@ body {
       font-size: 16px;
       min-width: none; } }
 
-.container, .appointmentBlock, .post, .recipe, .socialBlock {
+.generaluse1, .container, .appointmentBlock, .post, .recipe, .socialBlock {
   margin: 5px;
   width: calc(98vw-20px);
   font-family: montserrat;
   position: relative;
-  z-index: -1;
   min-width: 300px;
   animation: transitionInContent 1s; }
 
-.mapBlock {
+.generaluse2, .mapBlock, .emailForm {
   margin: 5px;
   width: calc(98vw-20px);
   font-family: montserrat;
   position: relative;
-  z-index: -1;
   min-width: 300px;
   animation: transitionInContent2 1s; }
 
-.container, .appointmentBlock, .post, .recipe, .socialBlock {
+.container {
   max-width: none;
   top: 80px;
   left: 10px;
@@ -222,20 +220,20 @@ body {
   flex-direction: column;
   background-color: #f7dcb9e6;
   border-radius: 22px; }
-  .container .presentationTitle, .appointmentBlock .presentationTitle, .post .presentationTitle, .recipe .presentationTitle, .socialBlock .presentationTitle {
+  .container .presentationTitle {
     width: 100%;
     text-align: center; }
-    .container .presentationTitle h1, .appointmentBlock .presentationTitle h1, .post .presentationTitle h1, .recipe .presentationTitle h1, .socialBlock .presentationTitle h1 {
+    .container .presentationTitle h1 {
       font-weight: 800;
       font-size: 26px;
       margin: 5px;
       color: #182833; }
-  .container .presentationImg Img, .appointmentBlock .presentationImg Img, .post .presentationImg Img, .recipe .presentationImg Img, .socialBlock .presentationImg Img {
+  .container .presentationImg Img {
     width: calc(100% - 10px);
     border-radius: 22px;
     margin-left: 5px;
     margin-right: 5px; }
-  .container .presentationText, .appointmentBlock .presentationText, .post .presentationText, .recipe .presentationText, .socialBlock .presentationText {
+  .container .presentationText {
     margin-left: 5px;
     height: 100%;
     color: #182833;
@@ -243,17 +241,17 @@ body {
     font-weight: 400; }
 
 @media screen and (min-width: 768px) {
-  .container, .appointmentBlock, .post, .recipe, .socialBlock {
+  .container {
     top: 50px; }
-    .container .presentationText, .appointmentBlock .presentationText, .post .presentationText, .recipe .presentationText, .socialBlock .presentationText {
+    .container .presentationText {
       font-size: 14px;
       margin-left: 10px;
       margin-right: 10px; }
-    .container .presentationTitle h1, .appointmentBlock .presentationTitle h1, .post .presentationTitle h1, .recipe .presentationTitle h1, .socialBlock .presentationTitle h1 {
+    .container .presentationTitle h1 {
       font-size: 32px; } }
 
 @media screen and (min-width: 1024px) {
-  .container, .appointmentBlock, .post, .recipe, .socialBlock {
+  .container {
     width: 98vw;
     position: relative;
     top: 32px;
@@ -261,28 +259,28 @@ body {
     border-radius: 22px;
     margin-left: 5px;
     font-family: montserrat; }
-    .container .presentationTitle, .appointmentBlock .presentationTitle, .post .presentationTitle, .recipe .presentationTitle, .socialBlock .presentationTitle {
+    .container .presentationTitle {
       width: 100%;
       text-align: center; }
-      .container .presentationTitle h1, .appointmentBlock .presentationTitle h1, .post .presentationTitle h1, .recipe .presentationTitle h1, .socialBlock .presentationTitle h1 {
+      .container .presentationTitle h1 {
         font-weight: 800;
         font-size: 48px;
         margin: 5px; }
-    .container .presentationImg, .appointmentBlock .presentationImg, .post .presentationImg, .recipe .presentationImg, .socialBlock .presentationImg {
+    .container .presentationImg {
       height: 100%; }
-      .container .presentationImg Img, .appointmentBlock .presentationImg Img, .post .presentationImg Img, .recipe .presentationImg Img, .socialBlock .presentationImg Img {
+      .container .presentationImg Img {
         width: 100%;
         border-radius: 22px;
         margin: 10px;
         vertical-align: middle; }
-    .container .presentationText, .appointmentBlock .presentationText, .post .presentationText, .recipe .presentationText, .socialBlock .presentationText {
+    .container .presentationText {
       margin: 20px;
       height: 100%;
       font-size: 18px;
       font-weight: 400; } }
 
 @media screen and (min-width: 992px) {
-  .container, .appointmentBlock, .post, .recipe, .socialBlock {
+  .container {
     top: 32px; } }
 
 .mapBlock {
@@ -382,7 +380,7 @@ body {
   background-color: #FFC300;
   border-radius: 22px;
   margin-left: 5px;
-  font-family: base-font;
+  font-family: montserrat;
   align-items: center;
   margin-bottom: 30px; }
   #list .listOptions {
@@ -685,6 +683,7 @@ body {
   top: 50px;
   background-color: #18283300; }
   .socialBlock a {
+    transition: all 0.1s ease 0s;
     display: flex;
     align-items: center;
     min-width: 290px;
@@ -700,6 +699,8 @@ body {
     font-size: 32px; }
     .socialBlock a img {
       height: 50px; }
+    .socialBlock a:hover {
+      opacity: .8; }
   .socialBlock h4 {
     width: 100%;
     margin: 5px;

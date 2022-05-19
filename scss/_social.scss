@@ -3,6 +3,7 @@
     top: 50px;
     background-color: #18283300;
     a{
+        transition: all 0.1s ease 0s;
         display: flex;
         align-items: center;
         min-width: 290px;
@@ -18,6 +19,9 @@
         font-size: 32px;
         img{
             height: 50px;
+        }
+        &:hover{
+            opacity: .8;
         }
     }
     h4{

@@ -1,15 +1,16 @@
-@mixin base($margin, $width, $font-family, $position, $z-index, $min-width, $animation){
+@mixin base($margin, $width, $font-family, $position, $min-width, $animation){
     margin: $margin;
     width: $width;
     font-family: $font-family;
     position: $position;
-    z-index: $z-index;
     min-width: $min-width;
     animation: $animation;
 }
 
 //codigo de mapeo: 1-estilado content transition1 2-Estilado content transition2
 $clases:(
+    container: 1,
+    mapBlock: 2,
     appointmentBlock: 1,
     emailForm: 2,
     post: 1,
@@ -17,21 +18,21 @@ $clases:(
     socialBlock: 1
 );
 
-.container{
-    @include base(5px,calc(98vw-20px),$base-font,relative,-1,300px,$content-transition-1);
+.generaluse1{
+    @include base(5px,calc(98vw-20px),$base-font,relative,300px,$content-transition-1);
 }
-.mapBlock{
-    @include base(5px,calc(98vw-20px),$base-font,relative,-1,300px,$content-transition-2);
+.generaluse2{
+    @include base(5px,calc(98vw-20px),$base-font,relative,300px,$content-transition-2);
 }
 
 @each $clase, $value in $clases{
     @if $value == 1{
         .#{$clase}{
-            @extend .container;
+            @extend .generaluse1;
         }
     }@else if $value == 2{
         .#{$clase}{
-            @extend .emailForm;
+            @extend .generaluse2;
         }
     }
 }
